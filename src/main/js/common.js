@@ -10,3 +10,14 @@ searchBox.addEventListener("click", () => {
         searchBox.classList.replace("bx-x", "bx-search");
     }
 })
+
+// // <script type="text/javascript">
+// let counter = 1;
+// setInterval(function () {
+//     document.getElementById('radio' + counter).checked = true;
+//     counter++;
+//     if (counter > 3) {
+//         counter = 1;
+//     }
+// }, 1000);
+// // </script>

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>바바마켓</title>
-    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script type="text/javascript" src="../js/common.js"></script>
     <!--  Box Icons Font CDN LINK  -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -61,24 +62,195 @@
                                     <li><a href="#">특가/혜택</a></li>
                                 </ul>
                             </div>
-                            <div class="search-box">
-                                <i class='bx bx-search'></i>
-                                <div class="input-box">
-                                    <input type="text" placeholder="검색어를 입력해 주세요">
+                            <div class="direct" style="border: 1px dashed red">
+                                <div class="direct__search btn__modal-open" data-login="y" id="searchPopup"
+                                     data-popup-name="popup_search">
+                                    <input type="text" id="searchInput2" class="search-input"
+                                           placeholder="검색어를 입력해 주세요" autocomplete="off">
+                                    <a href="#" class="">
+                                        <i class='bx bx-search'></i>>
+                                    </a>
+                                <a href="#" class="direct__cart">
+<!--                                    <span id="cartCnt">0</span>-->
+                                    <i class='bx bx-cart' alt='장바구니'></i>
+                                </a>
                                 </div>
                             </div>
-                            <div class="cart">
-                                <a href="#">
-                                    <i class='bx bx-cart'></i>
-                                </a>
-                            </div>
+                            <!--                            <div class="search-box">-->
+                            <!--                                <i class='bx bx-search'></i>-->
+                            <!--                                <div class="input-box">-->
+                            <!--                                    <input type="text" placeholder="검색어를 입력해 주세요">-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                            <!--                            <div class="cart">-->
+                            <!--                                <a href="#">-->
+                            <!--                                    <i class='bx bx-cart'></i>-->
+                            <!--                                </a>-->
+                            <!--                            </div>-->
                         </div>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
-    <main >
+    <main class="main_content">
+        <!--이미지 슬라이더-->
+        <section id="image_slide">
+            <div class="slider" style="margin-left: 28%;">
+                <div class="slides">
+                    <!--라디오 버튼-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <!--슬라이드 이미지-->
+                    <div class="slide first">
+                        <img src="../images/1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="../images/2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="../images/3.jpg">
+                    </div>
+                    <!--이미지 자동 재생-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                </div>
+                <!--이미지 수동 재생-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+                <script type="text/javascript">
+                    let counter = 1;
+                    setInterval(function () {
+                        document.getElementById('radio' + counter).checked = true;
+                        counter++;
+                        if (counter > 3) {
+                            counter = 1;
+                        }
+                    }, 5000);
+                </script>
+            </div>
+        </section>
+        <section class="categorys">
+            <div class="category">
+<!--                <div class="category_name"> -->
+                <div class="vegetable" style="padding-top: 40px"><!-- 채소 -->
+                    <h1>채소<a href="#">&nbsp 더보기</a></h1>
+                    <br>
+                    <ul>
+                        <li>
+                            <img src="../images/v1.jpg">
+                            <a href="#">
+                                <h4>꿀고구마</h4><br>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/v2.jpg">
+                            <a href="#">
+                                <h4>흙대파</h4><br>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/v3.jpg">
+                            <a href="#">
+                                <h4>무농약 콩나물</h4><br>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/v4.jpg">
+                            <a href="#">
+                                <h4>애호박</h4><br>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/v5.jpg">
+                            <a href="#">
+                                <h4>햇양파</h4><br>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="fruit m400"><!--과일-->
+                    <h1>과일<a href="#">&nbsp 더보기</a></h1>
+                    <br>
+                    <ul>
+                        <li>
+                            <img src="../images/f1.jpg">
+                            <a href="#">
+                                <h4>아보카도</h4><br>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/f2.jpg">
+                            <a href="#">
+                                <h4>레몬</h4><br>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/f3.jpg">
+                            <a href="#">
+                                <h4>자몽</h4><br>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/f4.jpg">
+                            <a href="#">
+                                <h4>방울 토마토</h4><br>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/f5.jpg">
+                            <a href="#">
+                                <h4>바나나</h4><br>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--과일-->
+                <div class="meat m400"><!--육류-->
+                    <h1>육류<a href="#">&nbsp 더보기</a></h1>
+                    <br>
+                    <ul>
+                        <li>
+                            <img src="../images/m1.jpg">
+                            <a href="#">
+                                <h4>등심</h4><br>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/m2.jpg">
+                            <a href="#">
+                                <h4>채끝</h4><br>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/m3.jpg">
+                            <a href="#">
+                                <h4>안심</h4><br>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/m4.jpg">
+                            <a href="#">
+                                <h4>양지</h4><br>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/m5.jpg">
+                            <a href="#">
+                                <h4>사태</h4><br>
+                            </a>
+                        </li>
+                    </ul>
+                </div><!--육류-->
+            </div>
+        </section>
     </main>
 </body>
 </html>
