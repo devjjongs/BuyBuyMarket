@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>바바마켓</title>
-    <link rel="stylesheet" href="../css/common.css">
-    <script type="text/javascript" src="../js/common.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/mainpageBody.css">
     <!--  Box Icons Font CDN LINK  -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
-<body>
+<body class="body">
     <header class="hd_header">
         <div class="header" style="background-color: pink;">
             <section class="user-area">
@@ -42,7 +42,6 @@
                             <div class="nav-links">
                                 <ul class="links">
                                     <li>
-                                        <!--                                        <i class='bx bx-menu'></i>-->
                                         <a href="#">카테고리</a>
                                         <i class='bx bxs-chevron-down arrow htmlcss-arrow'></i>
                                         <ul class="htmlCss-sub-menu sub-menu">
@@ -51,9 +50,7 @@
                                             <li><a href="#">고기</a></li>
                                             <li><a href="#">어류</a></li>
                                             <li><a href="#">면</a></li>
-                                            <li><a href="#">빵</a></li>
                                             <li><a href="#">디저트</a></li>
-                                            <li><a href="#">음료</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">신상품</a></li>
@@ -70,33 +67,21 @@
                                     <a href="#" class="">
                                         <i class='bx bx-search'></i>>
                                     </a>
-                                <a href="#" class="direct__cart">
-<!--                                    <span id="cartCnt">0</span>-->
-                                    <i class='bx bx-cart' alt='장바구니'></i>
-                                </a>
+                                    <a href="#" class="direct__cart">
+                                        <i class='bx bx-cart' alt='장바구니'></i>
+                                    </a>
                                 </div>
                             </div>
-                            <!--                            <div class="search-box">-->
-                            <!--                                <i class='bx bx-search'></i>-->
-                            <!--                                <div class="input-box">-->
-                            <!--                                    <input type="text" placeholder="검색어를 입력해 주세요">-->
-                            <!--                                </div>-->
-                            <!--                            </div>-->
-                            <!--                            <div class="cart">-->
-                            <!--                                <a href="#">-->
-                            <!--                                    <i class='bx bx-cart'></i>-->
-                            <!--                                </a>-->
-                            <!--                            </div>-->
                         </div>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
-    <main class="main_content">
-        <!--이미지 슬라이더-->
+    <!--이미지 슬라이더-->
+    <div class="main">
         <section id="image_slide">
-            <div class="slider" style="margin-left: 28%;">
+            <div class="slider">
                 <div class="slides">
                     <!--라디오 버튼-->
                     <input type="radio" name="radio-btn" id="radio1">
@@ -139,8 +124,8 @@
         </section>
         <section class="categorys">
             <div class="category">
-<!--                <div class="category_name"> -->
-                <div class="vegetable" style="padding-top: 40px"><!-- 채소 -->
+                <!-- 채소 -->
+                <div class="vegetable" style="padding-top: 40px">
                     <h1>채소<a href="#">&nbsp 더보기</a></h1>
                     <br>
                     <ul>
@@ -176,8 +161,9 @@
                         </li>
                     </ul>
                 </div>
-
-                <div class="fruit m400"><!--과일-->
+                <!-- 채소 -->
+                <!--과일-->
+                <div class="fruit m50">
                     <h1>과일<a href="#">&nbsp 더보기</a></h1>
                     <br>
                     <ul>
@@ -212,8 +198,10 @@
                             </a>
                         </li>
                     </ul>
-                </div><!--과일-->
-                <div class="meat m400"><!--육류-->
+                </div>
+                <!--과일-->
+                <!--육류-->
+                <div class="meat m50">
                     <h1>육류<a href="#">&nbsp 더보기</a></h1>
                     <br>
                     <ul>
@@ -248,9 +236,165 @@
                             </a>
                         </li>
                     </ul>
-                </div><!--육류-->
+                </div>
+                <!--육류-->
+                <!--수산-->
+                <div class="meat m50">
+                    <h1>수산<a href="#">&nbsp 더보기</a></h1>
+                    <br>
+                    <ul>
+                        <li>
+                            <img src="../images/s1.jpg">
+                            <a href="#">
+                                <h4>오로라 생연어</h4><br>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/s2.jpg">
+                            <a href="#">
+                                <h4>해조류 5종</h4><br>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/s3.jpg">
+                            <a href="#">
+                                <h4>오로라 그라브락스 연어</h4><br>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/s4.jpg">
+                            <a href="#">
+                                <h4>노르웨이 고등어</h4><br>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/s5.jpg">
+                            <a href="#">
+                                <h4>명란 3종</h4><br>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--수산-->
+                <!--면요리-->
+                <div class="meat m50">
+                    <h1>면요리<a href="#">&nbsp 더보기</a></h1>
+                    <br>
+                    <ul>
+                        <li>
+                            <img src="../images/n1.jpg">
+                            <a href="#">
+                                <h4>롱 파스타 6종</h4><br>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/n2.jpg">
+                            <a href="#">
+                                <h4>국내산 100% 햇당면</h4><br>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/n3.jpg">
+                            <a href="#">
+                                <h4>국수 3종</h4><br>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/n4.jpg">
+                            <a href="#">
+                                <h4>숏 파스타 5종</h4><br>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/n5.jpg">
+                            <a href="#">
+                                <h4>마라 소스 3종</h4><br>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--면요리-->
             </div>
         </section>
-    </main>
+        <!--메인 컨텐츠 푸터-->
+    </div>
+    <footer class="footer m50">
+        <div class="footer_inner">
+            <div class="footer_left">
+                <ul class="item">
+                    <li>
+                        <a href="#">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                </ul>
+                <!--푸터 고객지원-->
+                <div class="support">
+                    <strong class="support_title">고객센터</strong>
+                    <span class="support_tel">1800-0000</span>
+                    <p class="support_desc">
+                        평일, 토요일 : 7:00 ~ 18:00
+                        <br>
+                        공휴일 7시 ~ 13시 (일요일 휴무)
+                        <br>
+                        SNS
+                        <span class="point">
+                            <a href="#">@바바마켓</a>
+                        </span>
+                        친구 추가하고 소식과 여러 혜택을 받아보세요.
+                    </p>
+                </div>
+                <!--푸터 sns-->
+                <ul class="sns_box">
+                    <li>
+                        <a href="" class="instagram">
+                            <!--<img src="../images/ico_instagram.png">-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="youtube">
+                            <!--<img src="../images/ico_fb.png">-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="blog">
+                            <!--<img src="../images/ico_blog.png">-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="kakaotalk">
+                            <!--<img src="../images/ico_youtube.png">-->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_right">
+                <div class="company">
+                    <strong class="company_name">바이바이마켓</strong>
+                    <div class="company_info">
+                        대표이사 : 백종석
+                        <br>
+                        사업장소재지 : 서울특별시 강남구 역삼동 819-3 비트캠프 강남본원
+                        <br>
+                        사업자등록번호 : 123-45-67890
+                        <br>
+                        개인정보 보호 책임
+                        <br>
+                        호스팅 서비스 사업자 : (주)비트컴퓨터
+                        <p>
+                            바바마켓의 개별 판매자가 등록한 상품에 대한 광고, 상품주문, 배송, 환불의 의무와 책임은
+                            <br>
+                            각 판매자가 부담하고, 그리팅은 통신판매 중개자로서의 의무와 책임을 다합니다.
+                        </p>
+                    </div>
+                </div>
+                <em class="copyright">Copyright © 2021 BUYBUYMARKET. All Rights Reserved.</em>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
