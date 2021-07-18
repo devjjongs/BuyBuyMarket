@@ -191,7 +191,7 @@ i {
 img {
     max-width: 100%;
     border-style: none;
-    width: 300px;
+    width: 500px;
 }
 
 /****** top menu bar ******/
@@ -217,7 +217,7 @@ nav .navbar {
 
 nav .navbar .logo a {
     color: #fff;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 600;
     text-decoration: none;
 }
