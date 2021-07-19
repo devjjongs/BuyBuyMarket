@@ -1,0 +1,334 @@
+<head>
+    <meta charset="UTF-8">
+    <title>바바마켓</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="hd_header">
+        <div class="header" style="background-color: pink;">
+            <section class="user-area">
+                <ul class="user-area_menu">
+                    <li>
+                        <a href="">로그인</a>
+                    </li>
+                    <li>
+                        <a href="">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="">고객센터</a>
+                        <i></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="">목록 입력</a></li>
+                            <li><a href="">목록 입력</a></li>
+                            <li><a href="">목록 입력</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <div>
+                <div class="header_sec">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="../images/BBMARKET_logo.png">
+                        </a>
+                    </div>
+                    <nav>
+                        <div class="navbar">
+                            <div class="nav-links">
+                                <ul class="links">
+                                    <li>
+                                        <a href="#">카테고리</a>
+                                        <i class='bx bxs-chevron-down arrow htmlcss-arrow'></i>
+                                        <ul class="htmlCss-sub-menu sub-menu">
+                                            <li><a href="#">채소</a></li>
+                                            <li><a href="#">과일</a></li>
+                                            <li><a href="#">고기</a></li>
+                                            <li><a href="#">어류</a></li>
+                                            <li><a href="#">면</a></li>
+                                            <li><a href="#">디저트</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">신상품</a></li>
+                                    <li><a href="#">베스트</a></li>
+                                    <li><a href="#">알뜰쇼핑</a></li>
+                                    <li><a href="#">특가/혜택</a></li>
+                                </ul>
+                            </div>
+                            <div class="direct" style="border: 1px dashed red">
+                                <div class="direct__search btn__modal-open" data-login="y" id="searchPopup"
+                                     data-popup-name="popup_search">
+                                    <input type="text" id="searchInput2" class="search-input"
+                                           placeholder="검색어를 입력해 주세요" autocomplete="off">
+                                    <a href="#" class="">
+                                        <i class='bx bx-search'></i>>
+                                    </a>
+                                    <a href="#" class="direct__cart">
+                                        <i class='bx bx-cart' alt='장바구니'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- <div class="myPWCheck"> -->
+    <main class="main">
+        <h2 class="page_title">회원정보 수정</h2>
+        <aside class="snb">
+            <ul class="myPageBox">
+                <li><a>주문 내역</a></li>
+                <li><a>배송지 관리</a></li>
+                <li><a>상품 후기</a></li>
+                <li><a>상품 문의</a></li>
+                <li><a>적립금</a></li>
+                <li><a href="mypage2.html">1:1 문의 내역</a></li>
+                <li class="on"><a>회원정보 수정</a></li>
+            </ul>
+        </aside>
+        <div class="sub-cont">
+            <section class="sub-cont_myWelcome">
+                <h3 class="myWelcome_info">
+                    <span class="myWelcome_info_name">홍길동님 반갑습니다.</span>
+                    <span class="myWelcome_info_group">
+            <span>Gold 회원</span>
+            <span><a>멤버십 혜택 안내</a></span>
+            <span><a>다음달 예상 등급</a></span>
+          </span>
+                </h3>
+                <div class="box1">
+                    <ul>
+                        <li class="box__list__f">
+                            <span class="box__list__title">배송중</span>
+                            <span class="box__list__value">0건</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="box__list">
+                            <span class="box__list__title">Point</span>
+                            <span class="box__list__value">0P</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="box__list">
+                            <span class="box__list__title">쿠폰</span>
+                            <span class="box__list__value">0개</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="modify">
+                <div class="member-box">
+                    <table class="tbl_comm">
+                        <tbody>
+                            <tr class="fst">
+                                <th>아이디</th>
+                                <td>
+                                    <input type="text" name="name" required="" fld_esssential="" label="아이디"
+                                           placeholder="아이디를 입력해주세요">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>현재 비밀번호</th>
+                                <td>
+                                    <input type="password" name="originalPassword" id="originalPassword">
+                                    <input type="hidden" name="originalPasswordCheck" value="1">
+                                </td>
+                            </tr>
+                            <tr class="member_pwd">
+                                <th>새 비밀번호</th>
+                                <td>
+                                    <input type="password" name="newPassword" id="newPassword" label="새 비밀번호"
+                                           option="regPass"
+                                           maxlength="16" class="reg_pw">
+                                    <input type="hidden" name="newPasswordCheck" value="0">
+                                </td>
+                            </tr>
+                            <tr class="member_pwd">
+                                <th>새 비밀번호 확인</th>
+                                <td>
+                                    <input type="password" name="confirmPassword" id="confirmPassword" label="새 비밀번호"
+                                           option="regPass"
+                                           maxlength="16" class="confirm_pw">
+                                    <p class="txt_guide square">
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이름</th>
+                                <td>
+                                    <input type="text" name="name" required="" fld_esssential="" label="이름"
+                                           placeholder="이름을 입력해주세요">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td>
+                                    <input type="text" name="email" size="30" required="" option="regEmail" label="이메일"
+                                           placeholder="예: abc123@naver.com" onblur="chkEmailChange($(this))">
+                                    <input type="hidden" name="chk_email" required="" label="이메일중복체크" value="1">
+                                    <a class="btn default">중복확인</a>
+                                </td>
+                            </tr>
+                            <tr class="field_phone">
+                                <th>휴대폰</th>
+                                <td>
+                                    <div class="phone_num">
+                                        <input type="text" pattern="[0-9]*" name="mobileInp" placeholder="숫자만 입력해주세요"
+                                               class="inp">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="birth field_birth">
+                                <th>생년월일</th>
+                                <td>
+                                    <div class="birth_day">
+                                        <input type="text" name="birth_year" id="birth_year" pattern="[0-9]*"
+                                               label="생년월일"
+                                               size="4"
+                                               maxlength="4" placeholder="YYYY">
+                                        <span class="bar"></span>
+                                        <input type="text" name="birth[]" id="birth_month" pattern="[0-9]*" label="생년월일"
+                                               size="2"
+                                               maxlength="2" placeholder="MM">
+                                        <span class="bar"></span>
+                                        <input type="text" name="birth[]" id="birth_day" pattern="[0-9]*" label="생년월일"
+                                               size="2"
+                                               maxlength="2" placeholder="DD">
+                                    </div>
+                                    <p class="txt_guide">
+                                        <span class="txt bad"></span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>선택약관 동의</th>
+                                <td class="reg_agree">
+                                    <div class="check_view">
+                                        <input type="hidden" id="consentHidden" name="consent[1]" value="">
+                                        <label class="label_block check_agree ">
+                                            <input type="checkbox" name="hiddenCheck">
+                                            <span class="ico"></span>개인정보 수집·이용 동의 <span class="sub">(선택)</span>
+                                        </label>
+                                        <a href="#none" class="link btn_link btn_choice">약관보기 </a>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr class="reg_agree_1">
+                                <th>이용약관동의</th>
+                                <td>
+                                    <div class="bg_dim"></div>
+                                    <div class="check_view">
+                                        <label class="label_block check_agree ">
+                                            <input type="checkbox" name="marketing">
+                                            <span class="ico"></span>무료배송, 할인쿠폰 등 혜택/정보 수신 동의 <span
+                                                class="sub">(선택)</span>
+                                        </label>
+                                        <div class="check_event email_sms">
+                                            <label class="label_block check_agree ">
+                                                <input type="checkbox" name="sms" value="n">
+                                                <span class="ico"></span>SMS
+                                            </label>
+                                            <label class="label_block check_agree ">
+                                                <input type="checkbox" name="mailling" value="n">
+                                                <span class="ico"></span>이메일
+                                            </label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div id="formSubmit" class="form_footer">
+                        <a href="" class="btn default" style="text-decoration: none;">탈퇴하기</a>
+                        <button type="submit" class="btn active">회원정보수정</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer m50">
+        <div class="footer_inner">
+            <div class="footer_left">
+                <ul class="item">
+                    <li>
+                        <a href="#">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                </ul>
+                <!--푸터 고객지원-->
+                <div class="support">
+                    <strong class="support_title">고객센터</strong>
+                    <span class="support_tel">1800-0000</span>
+                    <p class="support_desc">
+                        평일, 토요일 : 7:00 ~ 18:00
+                        <br>
+                        공휴일 7시 ~ 13시 (일요일 휴무)
+                        <br>
+                        SNS
+                        <span class="point">
+                            <a href="#">@바바마켓</a>
+                        </span>
+                        친구 추가하고 소식과 여러 혜택을 받아보세요.
+                    </p>
+                </div>
+                <!--푸터 sns-->
+                <ul class="sns_box">
+                    <li>
+                        <a href="" class="instagram">
+                            <!--<img src="../images/ico_instagram.png">-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="youtube">
+                            <!--<img src="../images/ico_fb.png">-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="blog">
+                            <!--<img src="../images/ico_blog.png">-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="kakaotalk">
+                            <!--<img src="../images/ico_youtube.png">-->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_right">
+                <div class="company">
+                    <strong class="company_name">바이바이마켓</strong>
+                    <div class="company_info">
+                        대표이사 : 백종석
+                        <br>
+                        사업장소재지 : 서울특별시 강남구 역삼동 819-3 비트캠프 강남본원
+                        <br>
+                        사업자등록번호 : 123-45-67890
+                        <br>
+                        개인정보 보호 책임
+                        <br>
+                        호스팅 서비스 사업자 : (주)비트컴퓨터
+                        <p>
+                            바바마켓의 개별 판매자가 등록한 상품에 대한 광고, 상품주문, 배송, 환불의 의무와 책임은
+                            <br>
+                            각 판매자가 부담하고, 그리팅은 통신판매 중개자로서의 의무와 책임을 다합니다.
+                        </p>
+                    </div>
+                </div>
+                <em class="copyright">Copyright © 2021 BUYBUYMARKET. All Rights Reserved.</em>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

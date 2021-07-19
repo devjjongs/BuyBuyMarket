@@ -1,0 +1,231 @@
+/*-----푸터-----*/
+footer {
+  display: block;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.footer_inner:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.footer {
+  background: pink;
+  padding: 40px 0 70px;
+}
+
+.footer_inner {
+  width: 1100px; /*푸터 가로 길이*/
+  margin: 0 auto; /*푸터 가로 미진*/
+}
+
+.footer_left {
+  float: left; /*죄측 푸터 컨텐츠 요소 정렬*/
+  width: 490px; /*최즉 푸터 가로 길이*/
+}
+
+.footer_left .item {
+  font-size: 0;
+}
+
+.footer_left .item li {
+  display: inline-block;
+  position: relative;
+  margin-left: 15px;
+  padding-left: 15px;
+  vertical-align: top;
+  line-height: 24px;
+}
+
+.footer_left .item li:before {
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 1px;
+  height: 18px;
+  font-size: 18px;
+  background: pink;
+  content: '';
+}
+
+.footer_left .item li:first-child {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.footer_left .item li:first-child:before {
+  display: none;
+}
+
+.footer_left .item li a {
+  display: block;
+  font-size: 17px;
+  color: #1c1c1c;
+}
+
+.footer_left .item li a.bold {
+  font-weight: 600;
+}
+
+.footer_left .support {
+  margin: 34px 0 32px;
+}
+
+/*푸터 고객지원 타이틀*/
+.footer_left .support_title {
+  line-height: 30px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1c1c1c;
+}
+
+/*푸터 고객센터 전화번호*/
+.footer_left .support_tel {
+  display: block;
+  margin: 5px 0 15px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #1c1c1c;
+}
+
+.footer_left .support_desc {
+  line-height: 29px;
+  font-size: 16px;
+  color: #888;
+}
+
+/*고객지원 내용 강조 포인터*/
+.footer_left .support_desc .point {
+  color: #918C00;
+}
+
+.footer_left .sns_box {
+  display: inline-block;
+  border-radius: 50px;
+}
+
+.footer_left .sns_box li {
+  display: inline-block;
+}
+
+.footer_left .sns_box li:not(:first-child) {
+  margin-left: 20px;
+}
+
+.footer_left .sns_box li a {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+}
+
+.footer_left .instagram:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: url("https://www.greating.co.kr/front_pc/images/sp_ico.png?ver=210304") no-repeat -0px;
+  background-position-y: -160px;
+  content: '';
+}
+
+.footer_left .youtube:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: url("https://www.greating.co.kr/front_pc/images/sp_ico.png?ver=210304") no-repeat -50px;
+  background-position-y: -160px;
+  content: '';
+}
+
+.footer_left .blog:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: url("https://www.greating.co.kr/front_pc/images/sp_ico.png?ver=210304") no-repeat -100px;
+  background-position-y: -160px;
+  content: '';
+}
+
+.footer_left .kakaotalk:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: url("https://www.greating.co.kr/front_pc/images/sp_ico.png?ver=210304") no-repeat -150px;
+  background-position-y: -160px;
+  content: '';
+}
+
+.footer_right {
+  position: relative;
+  float: right;
+  width: 610px;
+}
+
+.footer_right .company {
+  margin: 60px 0 10px;
+  letter-spacing: -0.03em;
+}
+
+.footer_right .company_name {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1c1c1c;
+}
+
+.footer_right .company_info {
+  line-height: 27px;
+  font-size: 15px;
+  color: #888;
+}
+
+.footer_right .company_info p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.footer_right .copyright {
+  font-size: 14px;
+  color: #aaa;
+}
+
+a {
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+:focus {
+  outline: none;
+}

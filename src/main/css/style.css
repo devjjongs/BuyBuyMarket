@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+html .main {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+.page_title,
+.myWelcome_info_name {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+div,
+th,
+td,
+li,
+dt,
+dd,
+p {
+    word-break: break-all;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.page_title {
+    margin: 50px 0 50px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.snb {
+    float: left;
+    width: 220px;
+}
+
+.snb .myPageBox {
+    border: 1px solid #f2f2f2;
+    border-bottom: 0;
+    margin-left: 20px;
+}
+
+.snb .myPageBox li {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.snb .myPageBox li a {
+    display: block;
+    overflow: hidden;
+    padding: 15px 0 15px 20px;
+    background-size: 6px 11px;
+    font-size: 14px;
+    color: #666;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+}
+
+.snb .myPageBox li.on a,
+.snb .myPageBox li a:hover {
+    background: #fafafa;
+    background-size: 6px 11px;
+    font-weight: 700;
+    color: pink;
+}
+
+.snb .myPageBox li.on a {
+    border-bottom: 1px solid pink;
+}
+
+.sub-cont_myWelcome {
+    position: relative;
+    display: flex;
+    left: 30px;
+    border-top: 3px solid #1c1c1c;
+    margin-bottom: 10px;
+    max-width: 850px;
+}
+
+.myWelcome_info {
+    min-height: 72px;
+    padding: 35px 0;
+}
+
+.myWelcome_info_name {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.myWelcome_info_group {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.myWelcome_info_group a {
+    background: #eee;
+    margin-left: 3px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #3d3d3d;
+    font-size: 15px;
+}
+
+.hd .myWelcome .box {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 518px;
+    font-size: 0;
+}
+
+.box1 {
+    position: absolute;
+    top: 25px;
+    right: 65px;
+    width: 518px;
+    display: inherit;
+}
+
+.box__list {
+    display: inline-block;
+    padding-top: 15px;
+    width: 172px;
+    height: 77px;
+    border-left: 1px solid #ccc;
+    text-align: center;
+    vertical-align: top;
+}
+
+.box__list__f {
+    display: inline-block;
+    padding-top: 15px;
+    width: 172px;
+    height: 77px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.box__list__title {
+    font-size: 17px;
+}
+
+.box__list__value {
+    display: block;
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.member_join .tbl_comm {
+    width: 100%;
+    border-top: 2px solid #333;
+}
+
+.modify {
+    padding-bottom: 30px;
+    border-top: 3px solid #1c1c1c;
+    max-width: 850px;
+    display: flex;
+    position: relative;
+    left: 30px;
+}
+
+.tbl_comm {
+    width: 100%;
+}
+
+.tbl_comm th {
+    width: 159px;
+    /*padding: 20px 0 0 170px;*/
+    font-weight: 700;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.member_join,
+.tbl_comm {
+    padding-top: 19px;
+}
+
+td {
+    padding: 10px 0;
+    border-top: 0;
+    font-size: 14px;
+    vertical-align: top;
+    text-align: left;
+}
+
+textarea,
+input[type="text"],
+input[type="password"] {
+    height: 44px;
+    padding: 0 14px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    border-radius: 3px;
+    background: #fff;
+    outline: none;
+    vertical-align: top;
+    width: 270px;
+}
+
+.member_join,
+.birth,
+.birth_day {
+    overflow: hidden;
+    width: 310px;
+    padding-left: 18px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.member_join,
+.birth,
+.bar:after {
+    content: "/";
+    width: 22px;
+    height: 100%;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 42px;
+    text-align: center;
+}
+
+#birth_year,
+#birth_month,
+#birth_day {
+    border: none;
+    text-align: center;
+    width: 60px;
+}
+
+.member_join,
+.check_view,
+.check_agree {
+    padding: 8px 0;
+}
+
+.member_join,
+.check_event,
+.check_agree {
+    float: left;
+    padding-right: 80px;
+}
+
+.member_join,
+.btn_link {
+    position: relative;
+    right: 70px;
+    top: 7px;
+    padding-top: 10px;
+    font-size: 14px;
+    color: pink;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-decoration-line: none;
+}
+
+.reg_agree_1 {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #666;
+}
+
+.member_join,
+.form_footer {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.page_aticle button,
+.page_aticle input,
+.page_aticle select,
+.page_aticle * {
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.type_form,
+.btn.active {
+    border: 1px solid pink;
+    background-color: pink;
+    color: #fff;
+}
+
+.member_join,
+.btn.active {
+    display: inline-block;
+    width: 120px;
+    margin-left: 5px;
+    vertical-align: top;
+    width: 118px;
+    height: 47px;
+}
+
+.type_form,
+.btn {
+    width: 100%;
+    height: 44px;
+    border: 0;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    outline: none;
+}
+
+.type_form,
+.btn.default {
+    border: 1px solid pink;
+    background-color: #fff;
+    color: pink;
+    padding: 14.5px 32px;
+    position: relative;
+    top: 3.6px;
+}
+
+.sub-cont_myInquery {
+    /* border-top: 3px solid #1c1c1c;
+    margin-bottom: 40px;
+    max-width: 850px;
+    position: relative;
+    left: 250px; */
+    position: relative;
+    display: flex;
+    left: 30px;
+    border-top: 3px solid #1c1c1c;
+    margin-bottom: 10px;
+    max-width: 850px;
+}
+
+.hd,
+.rowsList,
+.btn_init {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 105px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+}
+
+.hd,
+.btn_init.pink {
+    background: pink;
+    border: 1px solid pink;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.rowList_total {
+    display: block;
+    height: 75px;
+    line-height: 75px;
+    font-size: 16px;
+}
+
+/* .total_num {
+  position: relative;
+  left: 348px;
+} */
+#dvFaqListArea {
+    position: relative;
+    /* top: 400px;
+    left: 346px; */
+    display: flex;
+    width: 850px;
+    border-top: 1px solid #333;
+}
+
+.ques_category,
+.ques_title,
+.ques_date {
+    margin-right: 45px;
+}
+
+.ques_title {
+    margin-right: 260px;
+}
