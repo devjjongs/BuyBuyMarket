@@ -1,0 +1,180 @@
+1<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>바바마켓</title>
+    <link rel="stylesheet" type="text/css" href="../css/common1.css">
+    <link rel="stylesheet" type="text/css" href="../css/mainpageBody.css">
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <!--  Box Icons Font CDN LINK  -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="body">
+    <header class="hd_header">
+        <div class="header" style="background-color: pink;">
+            <section class="user-area">
+                <ul class="user-area_menu">
+                    <li>
+                        <a href="">로그인</a>
+                    </li>
+                    <li>
+                        <a href="">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="">고객센터</a>
+                        <i></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="">목록 입력</a></li>
+                            <li><a href="">목록 입력</a></li>
+                            <li><a href="">목록 입력</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <div>
+                <div class="header_sec">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="../images/BBMARKET_logo.png">
+                        </a>
+                    </div>
+                    <nav>
+                        <div class="navbar">
+                            <div class="nav-links">
+                                <ul class="links">
+                                    <li>
+                                        <a href="#">카테고리</a>
+                                        <i class='bx bxs-chevron-down arrow htmlcss-arrow'></i>
+                                        <ul class="htmlCss-sub-menu sub-menu">
+                                            <li><a href="#">채소</a></li>
+                                            <li><a href="#">과일</a></li>
+                                            <li><a href="#">고기</a></li>
+                                            <li><a href="#">어류</a></li>
+                                            <li><a href="#">면</a></li>
+                                            <li><a href="#">디저트</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">신상품</a></li>
+                                    <li><a href="#">베스트</a></li>
+                                    <li><a href="#">알뜰쇼핑</a></li>
+                                    <li><a href="#">특가/혜택</a></li>
+                                </ul>
+                            </div>
+                            <div class="direct" style="border: 1px dashed red">
+                                <div class="direct__search btn__modal-open" data-login="y" id="searchPopup"
+                                     data-popup-name="popup_search">
+                                    <input type="text" id="searchInput2" class="search-input"
+                                           placeholder="검색어를 입력해 주세요" autocomplete="off">
+                                    <a href="#" class="">
+                                        <i class='bx bx-search'></i>>
+                                    </a>
+                                    <a href="#" class="direct__cart">
+                                        <i class='bx bx-cart' alt='장바구니'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--헤더 끝-->
+    <!--메인 컨텐츠 시작-->
+    <div class="login-form">
+        <h1 class="tit_login">로그인</h1>
+        <form>
+        <input type="text" name="id" class="text-field" placeholder="아이디를 입력해주세요">
+        <input type="password" name="password" class="text-field" placeholder="비밀번호를 입력해주세요">
+        <button type="submit" class="btn_type1"><span class="txt_type">로그인</span></button>
+        <div class="login_search">
+            <a href="/find_id.html"class="link">아이디 찾기</a>
+            <a href="/find_pwd.html"class="link">비밀번호 찾기</a>
+            <a href="/register.html"class="link">회원가입</span></a>
+        </div>
+        </form>
+    </div>
+    <div class="clear"></div>
+
+    <!--메인 컨텐츠 끝-->
+    <!--푸터 시작-->
+    <footer class="footer m50">
+        <div class="footer_inner">
+            <div class="footer_left">
+                <ul class="item">
+                    <li>
+                        <a href="#">회사소개</a>
+                    </li>
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                </ul>
+                <!--푸터 고객지원-->
+                <div class="support">
+                    <strong class="support_title">고객센터</strong>
+                    <span class="support_tel">1800-0000</span>
+                    <p class="support_desc">
+                        평일, 토요일 : 7:00 ~ 18:00
+                        <br>
+                        공휴일 7시 ~ 13시 (일요일 휴무)
+                        <br>
+                        SNS
+                        <span class="point">
+                            <a href="#">@바바마켓</a>
+                        </span>
+                        친구 추가하고 소식과 여러 혜택을 받아보세요.
+                    </p>
+                </div>
+                <!--푸터 sns-->
+                <ul class="sns_box">
+                    <li>
+                        <a href="" class="instagram">
+                            <!--<img src="../images/ico_instagram.png">-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="youtube">
+                            <!--<img src="../images/ico_fb.png">-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="blog">
+                            <!--<img src="../images/ico_blog.png">-->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="kakaotalk">
+                            <!--<img src="../images/ico_youtube.png">-->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_right">
+                <div class="company">
+                    <strong class="company_name">바이바이마켓</strong>
+                    <div class="company_info">
+                        대표이사 : 백종석
+                        <br>
+                        사업장소재지 : 서울특별시 강남구 역삼동 819-3 비트캠프 강남본원
+                        <br>
+                        사업자등록번호 : 123-45-67890
+                        <br>
+                        개인정보 보호 책임
+                        <br>
+                        호스팅 서비스 사업자 : (주)비트컴퓨터
+                        <p>
+                            바바마켓의 개별 판매자가 등록한 상품에 대한 광고, 상품주문, 배송, 환불의 의무와 책임은
+                            <br>
+                            각 판매자가 부담하고, 바바마켓은 통신판매 중개자로서의 의무와 책임을 다합니다.
+                        </p>
+                    </div>
+                </div>
+                <em class="copyright">Copyright © 2021 BUYBUYMARKET. All Rights Reserved.</em>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

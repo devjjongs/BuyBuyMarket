@@ -1,0 +1,649 @@
+@font-face {
+    font-family: 'Noto Sans KR', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nanum Gothic', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+}
+
+.hd_header {
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    min-height: 160px;
+    z-index: 4;
+}
+
+header {
+    display: block;
+}
+
+.hd_header .header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+html {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+html, body {
+    font-family: 'Noto Sans KR', sans-serif;
+    max-width: 100%;
+}
+
+.hd_header .header .user-area {
+    top: 0;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 5px;
+    text-align: right;
+}
+
+section {
+    display: block;
+}
+
+div {
+    display: block;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.hd_header .header .user-area_menu > li {
+    display: inline-block;
+    position: relative;
+}
+
+.hd_header .header .user-area_menu > li > a {
+    display: block;
+    line-height: 33px;
+    font-size: 14px;
+    color: #1c1c1c;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+.hd_header .header .user-area_menu > li:not(:first-child) {
+    /*margin: -7.5px 20px;*/
+}
+
+.hd_header .header .user-area_menu > li:not(:first-child):after {
+    position: absolute;
+    left: -3px;
+    top: 50%;
+    margin-top: -7.5px;
+    width: 1px;
+    height: 15px;
+    background: #888;
+    content: '';
+}
+
+.hd_header .header .user-area_menu > li > a > i {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 2px;
+    vertical-align: middle;
+}
+
+i {
+    font-style: italic;
+}
+
+.hd_header .header .user-area_menu > li > a > i:after {
+    position: absolute;
+    top: -2px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    content: '';
+    border: 4px solid transparent;
+    border-color: #1c1c1c transparent transparent transparent;
+}
+
+.hd_header .header .user-area_menu > li > ul {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    padding: 0 10px;
+    width: 105px;
+    border: 1px solid #ccc;
+    text-align: left;
+    box-sizing: border-box;
+    background: #fff;
+    z-index: 1;
+}
+
+.hd_header .header_sec {
+    display: table;
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.hd_header .header .logo {
+    display: table-caption;
+    width: 100%;
+    padding: 3px 0 20px;
+    text-align: center;
+    font-size: 0;
+}
+
+.logo img {
+    max-width: 100%;
+    border-style: none;
+    width: 500px;
+}
+
+/****** top menu bar ******/
+
+nav {
+    top: 0;
+    left: 0;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background: pink;
+}
+
+nav .navbar {
+    height: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+
+nav .navbar .logo a {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav .navbar .nav-links {
+    /*height: 100%;*/
+    line-height: 70px;
+}
+
+nav .navbar .nav-links .links {
+    display: flex;
+}
+
+nav .navbar .nav-links .links li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0 14px;
+}
+
+nav .navbar .nav-links .links li a {
+    height: 100%;
+    color: black;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+nav .navbar .nav-links .links li.arrow {
+    height: 100%;
+    width: 22px;
+    text-align: center;
+    color: black;
+    line-height: 70px;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-links .links li:hover .htmlcss-arrow,
+.navbar .nav-links .links li:hover .js-arrow {
+    transform: rotate(180deg);
+}
+
+.navbar .nav-links .links .sub-menu {
+    position: absolute;
+    top: 38px;
+    left: -15px;
+    background: pink;
+    line-height: 40px;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.navbar .nav-links .links .sub-menu li {
+    padding: 0 22px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar .nav-links .links .sub-menu li a {
+    font-size: 15px;
+}
+
+.navbar .nav-links .links li:hover .htmlCss-sub-menu,
+.navbar .nav-links .links li:hover .js-sub-menu {
+    display: block;
+}
+
+a {
+    background-color: transparent;
+}
+
+img {
+    border-style: none;
+}
+
+input {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+input {
+    overflow: visible;
+}
+
+.direct {
+    float: left;
+}
+
+.hd__header .header .direct {
+    display: table-cell;
+    padding: 0 10px 12px 0;
+    min-width: 310px;
+    width: 310px;
+    vertical-align: bottom;
+    text-align: right;
+}
+
+.hd__header .header .direct__search {
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    margin-right: 17px;
+    height: 35px;
+    line-height: 33px;
+    vertical-align: bottom;
+    background: #f5f5f5;
+    border-radius: 18px;
+    text-indent: 20px;
+    text-align: left;
+}
+
+.hd__header .header .direct__search input {
+    line-height: 30px;
+    width: 80%;
+    border: 0;
+    font-size: 14px;
+    background: transparent;
+}
+
+.hd__header .header .direct__search a {
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.hd__header .header .direct__cart {
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+}
+
+.hd__header .header .direct__cart span {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -12px;
+    right: -10px;
+    min-width: 23px;
+    height: 23px;
+    line-height: 23px;
+    line-height: 23px;
+    background: #918c00;
+    color: #FFF;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.hd img {
+    max-width: 100%;
+}
+
+a {
+    color: #1c1c1c;
+    text-decoration: none;
+}
+
+input {
+    margin: 0;
+    padding: 0;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+:focus {
+    outline: none;
+}
+
+/* 장바구니 */
+/*nav .navbar .cart {*/
+/*    padding-right: 100px;*/
+/*}*/
+
+/*nav .navbar .cart i {*/
+/*    color: #fff;*/
+/*    text-align: center;*/
+/*    font-size: 22px;*/
+/*    font-weight: 500;*/
+/*}*/
+
+/**/
+/**/
+/*메인*/
+/**/
+/**/
+/*이미지 슬라이더*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*-----푸터-----*/
+footer {
+    display: block;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.footer_inner:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.footer {
+    background: pink;
+    padding: 40px 0 70px;
+}
+
+.footer_inner {
+    width: 1100px; /*푸터 가로 길이*/
+    margin: 0 auto; /*푸터 가로 미진*/
+}
+
+.footer_left {
+    float: left; /*죄측 푸터 컨텐츠 요소 정렬*/
+    width: 490px; /*최즉 푸터 가로 길이*/
+}
+
+.footer_left .item {
+    font-size: 0;
+}
+
+.footer_left .item li {
+    display: inline-block;
+    position: relative;
+    margin-left: 15px;
+    padding-left: 15px;
+    vertical-align: top;
+    line-height: 24px;
+}
+
+.footer_left .item li:before {
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 1px;
+    height: 18px;
+    font-size: 18px;
+    background: pink;
+    content: '';
+}
+
+.footer_left .item li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.footer_left .item li:first-child:before {
+    display: none;
+}
+
+.footer_left .item li a {
+    display: block;
+    font-size: 17px;
+    color: #1c1c1c;
+}
+
+.footer_left .item li a.bold {
+    font-weight: 600;
+}
+
+.footer_left .support {
+    margin: 34px 0 32px;
+}
+
+/*푸터 고객지원 타이틀*/
+.footer_left .support_title {
+    line-height: 30px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #1c1c1c;
+}
+
+/*푸터 고객센터 전화번호*/
+.footer_left .support_tel {
+    display: block;
+    margin: 5px 0 15px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #1c1c1c;
+}
+
+.footer_left .support_desc {
+    line-height: 29px;
+    font-size: 16px;
+    color: #888;
+}
+
+/*고객지원 내용 강조 포인터*/
+.footer_left .support_desc .point {
+    color: #918C00;
+}
+
+.footer_left .sns_box {
+    display: inline-block;
+    border-radius: 50px;
+}
+
+.footer_left .sns_box li {
+    display: inline-block;
+}
+
+.footer_left .sns_box li:not(:first-child) {
+    margin-left: 20px;
+}
+
+.footer_left .sns_box li a {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+}
+
+.footer_left .instagram:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: url("https://www.greating.co.kr/front_pc/images/sp_ico.png?ver=210304") no-repeat -0px;
+    background-position-y: -160px;
+    content: '';
+}
+
+.footer_left .youtube:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: url("https://www.greating.co.kr/front_pc/images/sp_ico.png?ver=210304") no-repeat -50px;
+    background-position-y: -160px;
+    content: '';
+}
+
+.footer_left .blog:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: url("https://www.greating.co.kr/front_pc/images/sp_ico.png?ver=210304") no-repeat -100px;
+    background-position-y: -160px;
+    content: '';
+}
+
+.footer_left .kakaotalk:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: url("https://www.greating.co.kr/front_pc/images/sp_ico.png?ver=210304") no-repeat -150px;
+    background-position-y: -160px;
+    content: '';
+}
+
+.footer_right {
+    position: relative;
+    float: right;
+    width: 610px;
+}
+
+.footer_right .company {
+    margin: 60px 0 10px;
+    letter-spacing: -0.03em;
+}
+
+.footer_right .company_name {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #1c1c1c;
+}
+
+.footer_right .company_info {
+    line-height: 27px;
+    font-size: 15px;
+    color: #888;
+}
+
+.footer_right .company_info p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.footer_right .copyright {
+    font-size: 14px;
+    color: #aaa;
+}
+
+a {
+    color: #1c1c1c;
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+:focus {
+    outline: none;
+}
+
